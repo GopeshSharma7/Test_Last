@@ -3,17 +3,17 @@ kind: EVPN
 metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"core.cerebrum.juniper.net/v1","kind":"EVPN","metadata":{"annotations":{},"labels":{"author":"admin"},"name":"red-evpn-test8","namespace":"default"},"spec":{"communityExportAllow":false,"communityImportAllow":true,"encapsulation":"vxlan","exportPolicy":{"name":"default-rp"},"routingInstanceParent":{"apiVersion":"core.cerebrum.juniper.net/v1","kind":"RoutingInstance","name":"red","namespace":"default"}}}
+      {"apiVersion":"core.cerebrum.juniper.net/v1","kind":"EVPN","metadata":{"annotations":{},"labels":{"author":"admin"},"name":"red-evpn-test8","namespace":"default"},"spec":{"communityExportAllow":false,"communityImportAllow":false,"encapsulation":"vxlan","exportPolicy":{"name":"default-rp"},"routingInstanceParent":{"apiVersion":"core.cerebrum.juniper.net/v1","kind":"RoutingInstance","name":"red","namespace":"default"}}}
   creationTimestamp: "2024-02-20T15:45:12Z"
   labels:
-    author: rohit
+    author: kubernetes-admin
     operation: UPDATE
   name: red-evpn-test8
   namespace: default
   uid: 761702e7-f1cb-4389-ba3a-c5c5948efe6b
 spec:
   communityExportAllow: false
-  communityImportAllow: true
+  communityImportAllow: false
   encapsulation: vxlan
   exportPolicy:
     name: default-rp
